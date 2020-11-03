@@ -1,23 +1,137 @@
 <html>
 	<head>
 <style>
-.logo {
+* {
+	font-family: arial,sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	padding: 0 10px;
+	display: block;
+	font-size: 13px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.waffle-icon {
+	width: 30px;
+	height: 30px;
+	background-color: gray;
+}
+
+.user-avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: gray;
+}
+
+.padding-top-5 {
+	padding-top: 5px;
+}
+
+.padding-top-11 {
+	padding-top: 11px;
+}
+
+.content {
 	margin: 0 auto;
 	padding-top: 150px;
 }
-.img {
+
+.logo-img {
 	display: block;
 	margin: 0 auto;
 
-	width: 400px;
-	height: 150px;
+	width: 272px;
+	height: 92px;
 	background-color: grey;
 }
+
+.search {
+	width: 584px;
+	height: 46px;
+	border: 1px solid black;
+	border-radius: 23px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.search .search-icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-color: gray;
+	margin: 10px 5px 10px 15px;
+	vertical-align: bottom;
+}
+
+.search input {
+	width: 487px;
+	height: 39px;
+	border: 0;
+	outline: 0;
+	vertical-align: bottom;
+	font-size: 16px;
+}
+
+.search .mic-icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-color: gray;
+	margin: 10px 15px 10px 5px;
+	vertical-align: bottom;
+}
+
+.button-group {
+	margin-top: 50px;
+}
+
+button {
+	height: 36px;
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 3px;
+	outline: 0;
+	padding: 0 10px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+button:hover {
+	border-color: rgb(218,220,224);
+}
+
 </style>
 	</head>
 <body>
-	<div class="logo">
-		<div class="img" />	
+	<header>
+		<a href="#" class="left padding-top-11">About</a>
+		<a href="#" class="right"><div class="user-avatar"></div></a>
+		<a href="#" class="right padding-top-5"><div class="waffle-icon"></div></a>
+		<a href="#" class="right padding-top-11">Image</a>
+		<a href="#" class="right padding-top-11">Gmail</a>
+	</header>
+	<div class="content">
+		<div class="logo-img"></div>
+		<div class="search">
+			<div class="search-icon"></div>
+			<input type="text" />
+			<div class="mic-icon"></div>
+		</div>
+		<center class="button-group">
+			<button>Google Search</button>
+			<button>I'm Feeling Lucky</button>
+		</center>
 	</div>
 </body>
 </html>
