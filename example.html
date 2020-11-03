@@ -13,6 +13,10 @@ a {
 	font-size: 13px;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 .left {
 	float: left;
 }
@@ -25,6 +29,11 @@ a {
 	width: 30px;
 	height: 30px;
 	background-color: gray;
+	opacity: .55;
+}
+
+.waffle-icon:hover {
+	opacity: .85;
 }
 
 .user-avatar {
@@ -32,6 +41,7 @@ a {
 	height: 40px;
 	border-radius: 50%;
 	background-color: gray;
+	opacity: .85;
 }
 
 .padding-top-5 {
@@ -59,10 +69,15 @@ a {
 .search {
 	width: 584px;
 	height: 46px;
-	border: 1px solid black;
+	border: 1px solid #dfe1e5;
 	border-radius: 23px;
 	margin: 0 auto;
 	margin-top: 50px;
+}
+
+.search:hover {
+	box-shadow: 0 1px 6px rgba(32,33,36,.28);
+	border-color: rgba(223,225,229,0);
 }
 
 .search .search-icon {
