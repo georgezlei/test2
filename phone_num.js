@@ -46,3 +46,17 @@ function convertPhoneLetters(input) {
 // excellent job. Don't treat my modifications as critics. If I really don't
 // like your code, you probably won't recognise your function at all after
 // my modification. Such thing happened a lot when I review codes from others.
+
+
+function crazyTranslator(text) {
+  if (text.length !== 10) return false;
+
+  const mapping = '22233344455566677778889999';
+
+  return text.toLowerCase().split('').map((chr) => {
+    const charCode = chr.charCodeAt(0);
+    if (48 <= charCode && charCode <= 57) return chr; // number
+    if (97 <= charCode && charCode <= 122) return mapping[charCode - 97]; //letter
+    throw 'Unrecognised character';
+  }).join('');
+}
