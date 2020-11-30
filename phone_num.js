@@ -51,12 +51,10 @@ function convertPhoneLetters(input) {
 function crazyTranslator(text) {
   if (text.length !== 10) return false;
 
-  const mapping = '22233344455566677778889999';
-
   return text.toLowerCase().split('').map((chr) => {
     const charCode = chr.charCodeAt(0);
     if (48 <= charCode && charCode <= 57) return chr; // number
-    if (97 <= charCode && charCode <= 122) return mapping[charCode - 97]; //letter
+    if (97 <= charCode && charCode <= 122) return '22233344455566677778889999'[charCode - 97]; //letter
     throw 'Unrecognised character';
   }).join('');
 }
